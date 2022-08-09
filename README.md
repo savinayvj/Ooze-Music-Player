@@ -6,7 +6,7 @@
 [![API](https://img.shields.io/badge/API-21%2B-orange.svg?logo=android&style=flat-square)](https://android-arsenal.com/api?level=21)
 
 Based on [Phonograph](https://github.com/kabouzeid/Phonograph)
-<p align="center"><img width="128" height="128" src="https://github.com/savinayvj/Ooze-Music-Player/blob/feat/fork-updates/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" /></p>
+<p align="center"><img width="128" height="128" src="https://user-images.githubusercontent.com/69598423/183698066-dc6e4441-9dc3-4bce-95ca-5e05276c49b7.png" /></p>
 
 
 
