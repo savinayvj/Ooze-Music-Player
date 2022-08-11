@@ -3,6 +3,7 @@ package com.maxfour.music;
 import android.app.Application;
 import android.os.Build;
 
+import com.google.android.material.color.DynamicColors;
 import com.kabouzeid.appthemehelper.ThemeStore;
 import com.maxfour.music.appshortcuts.DynamicShortcutManager;
 
@@ -15,12 +16,16 @@ public class App extends Application {
         super.onCreate();
         app = this;
 
-        // default theme
-        if (!ThemeStore.isConfigured(this, 1)) {
-            ThemeStore.editTheme(this)
-                    .primaryColorRes(R.color.primary_color)
-                    .accentColorRes(R.color.accent_color)
-                    .commit();
+        if(true){
+            DynamicColors.applyToActivitiesIfAvailable(this);
+        } else {
+            // default theme
+            if (!ThemeStore.isConfigured(this, 1)) {
+                ThemeStore.editTheme(this)
+                        .primaryColorRes(R.color.primary_color)
+                        .accentColorRes(R.color.accent_color)
+                        .commit();
+            }
         }
 
         // Set up dynamic shortcuts

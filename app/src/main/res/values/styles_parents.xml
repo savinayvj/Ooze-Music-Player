@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Music.Base" parent="Theme.AppCompat.NoActionBar">
+    <style name="Theme.Music.Base" parent="Theme.Material3.DynamicColors.Dark">
         <item name="android:windowActionBarOverlay">true</item>
         <item name="windowActionBarOverlay">true</item>
         <item name="md_dark_theme">true</item>
@@ -18,9 +18,11 @@
         <!-- necessary to find the overflow button later in the layout-->
         <item name="android:actionOverflowButtonStyle">@style/Widget.ActionButton.Overflow</item>
         <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.Music.Base.Light" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.Music.Base.Light" parent="Theme.Material3.DynamicColors.Light">
         <item name="android:windowActionBarOverlay">true</item>
         <item name="windowActionBarOverlay">true</item>
         <item name="md_dark_theme">false</item>
@@ -37,6 +39,8 @@
         <!-- necessary to find the overflow button later in the layout-->
         <item name="android:actionOverflowButtonStyle">@style/Widget.ActionButton.Overflow</item>
         <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="AboutActivityTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
